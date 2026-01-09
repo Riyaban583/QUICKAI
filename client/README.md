@@ -1,16 +1,75 @@
-# React + Vite
+# 🚀 QUICKAI2 – AI Tools Subscription Platform
+QUICKAI2 is a modern **AI-powered SaaS web application** built with **React.js**, integrated with **Clerk Authentication & Billing**.  
+It provides multiple AI utilities like title generation, article writing, image tools, resume review, and more — with **Free & Premium plans**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Features
+🔐 Secure authentication using **Clerk**
+ 💳 Subscription & billing with **Clerk Pricing Table + Stripe**
+ 🧠 AI-powered tools:
+  - Blog Title Generator
+  - Article Writing
+  - Image Generation
+  - Background Removal
+  - Object Removal
+  - Resume Review
+- 📊 User dashboard
+- 👥 Community page
+- 🎨 Modern UI with reusable components
+- ⚡ Fast performance (Vite + React)
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
+ **Frontend:** React.js (Vite)
+ **Authentication:** Clerk
+ **Billing & Payments:** Clerk Billing + Stripe
+ **Styling:** CSS / Tailwind CSS
+ **State & Routing:** React Router
+**Deployment Ready:** Vercel / Netlify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
+QUICKAI2/
+└── client/
+├── node_modules/
+├── public/
+└── src/
+├── assets/
+│ └── (images, icons, svgs)
+│
+├── components/
+│ ├── AiTools.jsx
+│ ├── CreationItem.jsx
+│ ├── Footer.jsx
+│ ├── Hero.jsx
+│ ├── Navbar.jsx
+│ ├── Sidebar.jsx
+│ └── Testimonial.jsx
+│
+├── pages/
+│ ├── BlogTitles.jsx
+│ ├── Community.jsx
+│ ├── Dashboard.jsx
+│ ├── GenerateImages.jsx
+│ ├── Home.jsx
+│ ├── Layout.jsx
+│ ├── RemoveBackground.jsx
+│ ├── RemoveObject.jsx
+│ ├── ReviewResume.jsx
+│ ├── WriteArticle.jsx
+│ └── Plan.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
 
-## React Compiler
+🧠 Application Flow
+Unauthenticated users → redirected to Sign In
+Authenticated users → access AI tools
+Premium features → locked behind subscription
+Billing handled securely via Stripe
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌟 Future Enhancements
+Usage limits for free users
+Admin dashboard
+API-based AI integrations
+Webhooks for subscription events
+Analytics & user insights
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
